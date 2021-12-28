@@ -1,6 +1,10 @@
 import { Ore } from '~/types/ores'
 
-export const state = () => ({
+interface State {
+  ores: Array<Ore>
+}
+
+export const state = (): State => ({
   ores: [
     {
       id: 1,
@@ -264,12 +268,14 @@ export const state = () => ({
       },
       active: false
     }
-  ] as Array<Ore>
+  ]
 })
 
 export const mutations = {
-  CHANGE_ACTIVE (state: any, id: number) {
-    const ore: Ore = state.ores.find((el: Ore) => el.id === id)
-    ore.active = !ore.active
+  CHANGE_ACTIVE (state: State, id: number) {
+    const ore = state.ores.find((el: Ore) => el.id === id)
+    if (ore) {
+      ore.active = !ore.active
+    }
   }
 }

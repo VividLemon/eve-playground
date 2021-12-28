@@ -1,7 +1,10 @@
 import { Commodity } from '../types/commodities'
 
+interface State {
+  commodities: Array<Commodity>
+}
 // TODO update all of these to their actual in game ids
-export const state = () => ({
+export const state = (): State => ({
   commodities: [
     {
       id: 1,
@@ -237,5 +240,5 @@ export const state = () => ({
       planets: ['Barren', 'Gas', 'Ice', 'Oceanic', 'Storm', 'Temperate'],
       prev: []
     }
-  ] as Array<Commodity>
+  ]
 })

@@ -5,7 +5,7 @@ export interface Ore {
     type: 'simple' | 'coherent' | 'variegated' | 'complex' | 'mercoxit'
     variations: Array<
         {
-            name: 'Condensed' | 'Massive' | 'Concentrated' | 'Dense' | 'Solid' | 'Viscous' | 'Azure' | 'Rich' | 'Silvery' | 'Golden' | 'Luminous' | 'Fiery' | 'Pure' | 'Pristine' | 'Vivid' | 'Radiant' | 'Vitric' | 'Glazed' | 'Onyx' | 'Iridescent' | 'Prismatic' | 'Sharp' | 'Crystaline' | 'Monoclinic' | 'Triclinic' | 'Crimson' | 'Prime' | 'Magma' | 'Vitreous' | 'Bright' | 'Gleaming'
+            name: 'Condensed' | 'Massive' | 'Concentrated' | 'Dense' | 'Solid' | 'Viscous' | 'Azure' | 'Rich' | 'Silvery' | 'Golden' | 'Luminous' | 'Fiery' | 'Pure' | 'Pristine' | 'Vivid' | 'Radiant' | 'Vitric' | 'Glazed' | 'Onyx' | 'Obsidian' | 'Iridescent' | 'Prismatic' | 'Sharp' | 'Crystaline' | 'Monoclinic' | 'Triclinic' | 'Crimson' | 'Prime' | 'Magma' | 'Vitreous' | 'Bright' | 'Gleaming'
             modifier: 1.05 | 1.1
         }
     >,
@@ -14,6 +14,7 @@ export interface Ore {
         Tritanium?: number,
         Pyerite?: number,
         Mexallon?: number,
+        Megacyte?: number,
         Isogen?: number,
         Nocxium?: number,
         Zydrine?: number,
