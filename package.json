@@ -20,7 +20,7 @@
     "lru-cache": "^6.0.0",
     "nuxt": "^2.15.7",
     "vuelidate": "^0.7.7",
-    "vuetify": "^2.5.5"
+    "vuetify": "^2.6.3"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.16.5",
