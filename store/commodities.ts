@@ -1,8 +1,5 @@
 import { Commodity } from '../types/commodities'
-
-interface State {
-  commodities: Array<Commodity>
-}
+interface State {commodities: Array<Commodity>}
 // TODO update all of these to their actual in game ids
 export const state = (): State => ({
   commodities: [
